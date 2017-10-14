@@ -1,0 +1,40 @@
+﻿@model FacebookTest.Models.FacebookUserModel
+
+@{
+    ViewBag.Title = "FbActivity";
+}
+
+<h2>Facebook Activity</h2>
+
+<div>
+    Activity
+    <hr />
+    <div class="row">
+        <div class="col-md-3">
+            <p class="well">
+              Welcome &emsp;  @Html.DisplayFor(model => model.name)!!!
+            </p>
+        </div>
+        <div class="col-md-3 col-md-offset-5">
+            <p class="well">
+                @Html.DisplayFor(model => model.email)
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <ul class="nav nav-pills nav-stacked">
+            <li>
+                <a href="#"> View Profile</a>
+            </li>
+            <li>
+                <a href="#"> View Friends</a>
+            </li>
+            <li>
+                <a href="#">  Post to wall</a>
+            </li>
+        </ul>
+       
+    </div>
+   
+</div>

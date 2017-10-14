@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container" style="margin-top:10px">
+    <div class="row">
+        <button type="button" class="btn btn-success" id="btnApp">
+            Get Into App
+        </button>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btnApp').click(function () {
+            window.location='/Account/Login'
+        });
+        });
+</script>
